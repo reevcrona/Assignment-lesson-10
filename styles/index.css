@@ -9,7 +9,7 @@ body{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template: repeat(12,1fr) / repeat(12,1fr);
+    grid-template: repeat(10,1fr) / repeat(12,1fr);
     gap: 24px;
 
     background-color: #fff;
@@ -32,13 +32,12 @@ body{
 }
 .grid-child:nth-child(5){
     background-color: #AACC00;
-    grid-area: 7/5/10/7;
+    grid-area: 7/5/9/7;
 }
 .grid-child:nth-child(6){
     background-color: #BFD200;
-    grid-area: 10/5/-1/7;
+    grid-area: 9/5/-1/7;
 }
-
 .grid-child:nth-child(7){
     background-color: #DDDF00;
     grid-area: 1/9/3/-1;
@@ -51,7 +50,6 @@ body{
     background-color: #FFFF3F;
     grid-area: 5/9/7/-1;
 }
-
 
 .grid-child:nth-child(10){
     background-color: #D4D700;
