@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
     height: 100vh;
 }
@@ -9,60 +9,55 @@ body{
     height: 100%;
     width: 100%;
     display: grid;
+    grid-template: repeat(12,1fr) / repeat(12,1fr);
+    gap: 24px;
+
     background-color: #fff;
 }
 .grid-child:nth-child(1){
-    width: 50px;
-    height: 50px;
     background-color: #007F5F;
+    grid-area: 1/1/4/5;
 }
 .grid-child:nth-child(2){
-    width: 50px;
-    height: 50px;
     background-color: #2B9348;
+    grid-area: 4/1/7/5;
 }
 .grid-child:nth-child(3){
-    width: 50px;
-    height: 50px;
     background-color: #55A630;
+   grid-area: 7/1/-1/5;
 }
 .grid-child:nth-child(4){
-    width: 50px;
-    height: 50px;
     background-color: #80B918;
+    grid-area: 1/5/7/9;
 }
 .grid-child:nth-child(5){
-    width: 50px;
-    height: 50px;
     background-color: #AACC00;
+    grid-area: 7/5/10/7;
 }
 .grid-child:nth-child(6){
-    width: 50px;
-    height: 50px;
     background-color: #BFD200;
+    grid-area: 10/5/-1/7;
 }
+
 .grid-child:nth-child(7){
-    width: 50px;
-    height: 50px;
     background-color: #DDDF00;
+    grid-area: 1/9/3/-1;
 }
 .grid-child:nth-child(8){
-    width: 50px;
-    height: 50px;
     background-color: #EEEF20;
+    grid-area: 3/9/5/-1;
 }
 .grid-child:nth-child(9){
-    width: 50px;
-    height: 50px;
     background-color: #FFFF3F;
+    grid-area: 5/9/7/-1;
 }
+
+
 .grid-child:nth-child(10){
-    width: 50px;
-    height: 50px;
     background-color: #D4D700;
+    grid-area: 7/7/-1/11;
 }
 .grid-child:nth-child(11){
-    width: 50px;
-    height: 50px;
     background-color: #007F5F;
+    grid-area: 7/11/-1/-1;
 }
